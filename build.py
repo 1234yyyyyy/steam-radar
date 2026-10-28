@@ -17,25 +17,27 @@ def thumb(u):
   im=Image.open(io.BytesIO(r)).convert("RGB");im.thumbnail((480,480));b=io.BytesIO();im.save(b,"JPEG",quality=80)
   return "data:image/jpeg;base64,"+base64.b64encode(b.getvalue()).decode()
 e=html.escape;cards=""
+MP={"A Short Hike":"未確認","Celeste Classic":"未確認","We Become What We Behold":"未確認"}
 for i,g in enumerate(G,1):
   p,n,d,t,img,s,rv,pr,zh,l,tip=g
-  cards+=f'''<div class="c" data-tags="#{p} #{t}" data-id="{i}"><a href="{l}" target="_blank" rel="noopener"><img src="{thumb(img)}" alt="{e(n)}"></a><div class="b"><h3>{i}. <a href="{l}" target="_blank" rel="noopener">{e(n)}</a></h3><div class="m">{"Steam" if p=="steam" else "itch.io"}・{t}・{e(d)}</div><p>{e(s)}</p><div class="m">{e(rv)}｜{e(pr)}｜{zh}</div><p class="tip">💡 {e(tip)}</p><label><input type="checkbox" class="ni"> 不感興趣</label></div></div>'''
+  mp=MP.get(n,"僅單人")
+  cards+=f'''<div class="c" data-tags="#{p} #{t} #mp-{mp}" data-id="{i}"><a href="{l}" target="_blank" rel="noopener"><img src="{thumb(img)}" alt="{e(n)}"></a><div class="b"><h3>{i}. <a href="{l}" target="_blank" rel="noopener">{e(n)}</a></h3><div class="m">{"Steam" if p=="steam" else "itch.io"}・{t}・{e(d)}</div><p>{e(s)}</p><div class="m">{e(rv)}｜{e(pr)}｜{zh}</div><div class="m">👥 多人：{mp}</div><p class="tip">💡 {e(tip)}</p><label><input type="checkbox" class="ni"> 不感興趣</label></div></div>'''
 btn=lambda xs:"".join(f'<button data-k="{k}"{" class=on" if k=="" else ""}>{n}</button>' for n,k in xs)
-r1=btn([("全部",""),("Steam","#steam"),("itch.io","#itch")]);r2=btn([("全部",""),("解謎","#解謎"),("Roguelike","#Roguelike"),("敘事","#敘事"),("策略","#策略"),("模擬","#模擬"),("動作","#動作"),("冒險","#冒險")])
+r1=btn([("全部",""),("Steam","#steam"),("itch.io","#itch")]);r2=btn([("全部",""),("解謎","#解謎"),("Roguelike","#Roguelike"),("敘事","#敘事"),("策略","#策略"),("模擬","#模擬"),("動作","#動作"),("冒險","#冒險")]);r3=btn([("全部",""),("僅單人","#mp-僅單人"),("本地合作","#mp-[^ ]*本地合作"),("線上合作","#mp-[^ ]*線上合作"),("對戰","#mp-[^ ]*對戰")])
 open("index.html","w").write(f'''<!doctype html><html lang="zh-Hant-TW"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>冷門好遊戲雷達</title><style>
 body{{background:#14161a;color:#e6e6e6;font-family:system-ui,"Noto Sans TC",sans-serif;margin:0;padding:20px}}h1{{margin:0}}.sub{{color:#9aa}}input[type=search]{{padding:8px;width:260px;background:#22252b;color:#eee;border:1px solid #444;border-radius:6px}}
 .row{{margin:8px 0}}button{{background:#22252b;color:#ccc;border:1px solid #444;border-radius:16px;padding:5px 12px;margin:2px;cursor:pointer}}button.on{{background:#3d6fd8;color:#fff}}
 .g{{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;margin-top:12px}}.c{{background:#1e2127;border-radius:10px;overflow:hidden}}.c.x{{opacity:.4}}.c img{{width:100%;aspect-ratio:460/215;object-fit:cover;display:block}}.b{{padding:10px 12px}}h3{{margin:0 0 4px;font-size:1.05em}}h3 a{{color:#fff;text-decoration:none}}.m{{color:#9ab;font-size:.85em}}p{{margin:6px 0;font-size:.92em}}.tip{{color:#cba}}#none{{display:none;color:#999;margin:20px}}#out{{width:100%;max-width:500px;background:#22252b;color:#eee}}</style></head><body>
-<h1>冷門好遊戲雷達</h1><div class="sub">共 {len(G)} 款・更新 2026-10-28・Steam 好評率/評論數取自商店頁（可能僅英文評論），itch 為頁面星等；遊玩時數未確認</div>
+<h1>冷門好遊戲雷達</h1><div class="sub">共 {len(G)} 款・更新 2026-10-28・Steam 好評率/評論數取自商店頁（可能僅英文評論），itch 為頁面星等；多人資訊 Steam 取自商店分類、itch 頁面未標示者為未確認；遊玩時數未確認</div>
 <div class="row"><input type="search" id="q" placeholder="搜尋名稱、類型、開發商…"> <button id="clr">清除</button> <span id="cnt"></span></div>
-<div class="row" id="r1">{r1}</div><div class="row" id="r2">{r2}</div>
+<div class="row" id="r1">{r1}</div><div class="row" id="r2">{r2}</div><div class="row" id="r3">{r3}</div>
 <div class="row"><button id="exp">匯出「不感興趣」編號</button> <textarea id="out" rows="2" readonly></textarea></div>
 <div class="g" id="g">{cards}</div><div id="none">找不到符合的項目</div>
 <script>
 const K='radar-ni',st=new Set(JSON.parse(localStorage.getItem(K)||'[]')),cs=[...document.querySelectorAll('.c')];
 cs.forEach(c=>{{const b=c.querySelector('.ni');b.checked=st.has(c.dataset.id);c.classList.toggle('x',b.checked);b.onchange=()=>{{b.checked?st.add(c.dataset.id):st.delete(c.dataset.id);localStorage.setItem(K,JSON.stringify([...st]));c.classList.toggle('x',b.checked)}}}});
-const f={{r1:'',r2:''}};['r1','r2'].forEach(r=>document.querySelectorAll('#'+r+' button').forEach(b=>b.onclick=()=>{{document.querySelectorAll('#'+r+' button').forEach(x=>x.classList.remove('on'));b.classList.add('on');f[r]=b.dataset.k;go()}}));
-function go(){{const q=document.getElementById('q').value.toLowerCase();let n=0;cs.forEach(c=>{{const t=c.dataset.tags,ok=(!f.r1||new RegExp(f.r1).test(t))&&(!f.r2||new RegExp(f.r2).test(t))&&(c.textContent+t).toLowerCase().includes(q);c.style.display=ok?'':'none';n+=ok}});document.getElementById('cnt').textContent='顯示 '+n+' 款';document.getElementById('none').style.display=n?'none':'block'}}
+const f={{r1:'',r2:'',r3:''}};['r1','r2','r3'].forEach(r=>document.querySelectorAll('#'+r+' button').forEach(b=>b.onclick=()=>{{document.querySelectorAll('#'+r+' button').forEach(x=>x.classList.remove('on'));b.classList.add('on');f[r]=b.dataset.k;go()}}));
+function go(){{const q=document.getElementById('q').value.toLowerCase();let n=0;cs.forEach(c=>{{const t=c.dataset.tags,ok=(!f.r1||new RegExp(f.r1).test(t))&&(!f.r2||new RegExp(f.r2).test(t))&&(!f.r3||new RegExp(f.r3).test(t))&&(c.textContent+t).toLowerCase().includes(q);c.style.display=ok?'':'none';n+=ok}});document.getElementById('cnt').textContent='顯示 '+n+' 款';document.getElementById('none').style.display=n?'none':'block'}}
 document.getElementById('q').oninput=go;document.getElementById('clr').onclick=()=>{{document.getElementById('q').value='';go()}};
 document.getElementById('exp').onclick=()=>{{const o=document.getElementById('out');o.value=[...st].sort((a,b)=>a-b).length?'不感興趣：'+[...st].sort((a,b)=>a-b).join(', '):'（尚未勾選）';o.select();navigator.clipboard&&navigator.clipboard.writeText(o.value).catch(()=>{{}})}};go();
 </script></body></html>''')
