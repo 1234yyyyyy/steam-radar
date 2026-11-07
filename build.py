@@ -75,13 +75,27 @@ G6=[
 ("itch","Cat's Cradle","Athena_Pallas_Cat / Erica Li / Herman Wu","解謎","https://img.itch.zone/aW1nLzIxNzk1MDgucG5n/original/oP7qH1.png","兩隻貓被不同重力分開，靠一條毛線互相拉扯重逢的雙人解謎平台。","itch 4.8★・107 人評分","免費","繁中未確認（頁面標示英文）","https://athenapallascat.itch.io/cats-cradle","網頁版；開發者建議用 Firefox。需要兩人配合拉線，單人體驗較差。","本地合作","單次約數分鐘（itch 頁面標示）"),
 ]
 
+G7=[
+("steam","The Past Within","Rusty Lake","解謎",S+"1515210/header.jpg","一人活在過去、一人活在未來，靠語音互相指路解謎的非同步雙人合作。","3,926 則評論・94% 好評","NT$66（特價 44 折，原價 NT$118）","有繁中","https://store.steampowered.com/app/1515210/","必須兩人各開一局（或兩台裝置）；用語音最順。短篇但機關很巧妙。","線上合作","主線約 2 小時（HowLongToBeat，經第三方轉載）"),
+("steam","KeyWe","Stonewheat & Sons","模擬",S+"1242980/header.jpg","兩隻奇異鳥當郵務員：跳、啄、撞屁股按按鈕，趕在時限內把信送完。","1,861 則評論・90% 好評","NT$378（原價）","有繁中","https://store.steampowered.com/app/1242980/","本地沙發或線上合作皆可；單人也能控兩隻但節奏較累。關卡短、適合輪流玩。","本地合作・線上合作","主線約 6 小時（HowLongToBeat）"),
+("steam","Streets of Rogue","Matt Dabrowski","Roguelike",S+"512900/header.jpg","在隨機生成的城市裡用任何手段完成任務：潛行、戰鬥、賄賂、當猩猩都行。","8,432 則評論・96% 好評","NT$328（原價）","無繁中（只有簡中）","https://store.steampowered.com/app/512900/","1～4 人本地／線上合作；也有對戰。自由度極高，每次開局職業組合都不同。","本地合作・線上合作・本地對戰・線上對戰","主線約 10.5 小時（HowLongToBeat，經第三方轉載）"),
+("steam","SpiderHeck","Neverjam","動作",S+"1329500/header.jpg","蜘蛛人拿光劍對砍：甩絲飛簷走壁，可對戰也可合作擋蟲潮。","2,828 則評論・94% 好評","NT$459（原價）","無繁中（只有簡中）","https://store.steampowered.com/app/1329500/","上手像派對，精通要練位移；有創意工坊關卡。遠端同樂也方便。","本地合作・線上合作・本地對戰・線上對戰","主線約 6.5 小時（HowLongToBeat，經第三方轉載）"),
+("steam","Rabbit and Steel","mino_dev","動作",S+"2132850/header.jpg","兔耳冒險者組隊打彈幕王：像小型 MMO 副本，走位與機制拆解是精華。","7,436 則評論・97% 好評","NT$268（原價）","無繁中（只有簡中）","https://store.steampowered.com/app/2132850/","1～4 人本地／線上合作；單人可帶 AI。難度曲線陡，建議先學閃避時機。","本地合作・線上合作","主線約 5 小時（HowLongToBeat，經第三方轉載）"),
+("steam","Door Kickers: Action Squad","PixelShard / KillHouse Games","動作",S+"686200/header.jpg","橫向捲軸 SWAT：破門、救人質、互補職業技能，像可合作的街機行動遊戲。","2,028 則評論・93% 好評","NT$248（原價）","無繁中（只有簡中）","https://store.steampowered.com/app/686200/","本地或線上雙人最對味；有關卡編輯器。一關短、重覆可玩性高。","本地合作・線上合作","主線約 8.5 小時（HowLongToBeat，經第三方轉載）"),
+("steam","Chicory: A Colorful Tale","Wishes Ultd.","冒險",S+"1123450/header.jpg","狗狗拿神筆為世界上色：解謎、探索與塗鴉合體，可雙人同屏一起畫。","2,251 則評論・97% 好評","NT$164（特價 5 折，原價 NT$328）","有繁中","https://store.steampowered.com/app/1123450/","特價中；本地合作一人畫、一人走也很有趣。偏溫馨敘事，節奏不趕。","本地合作","主線約 9 小時（HowLongToBeat，經第三方轉載）"),
+("itch","Trail Mix","PuzzSoft","解謎","https://img.itch.zone/aW1nLzIyNTczODQucG5n/original/5NcXAV.png","手繪水彩風雙人解謎：撿到的營員會黏成怪形狀，靠形狀過關。","itch 4.7★・46 人評分","免費","繁中未確認（頁面標示英文）","https://puzzsoft.itch.io/trail-mix","專為本地合作設計；單人可切換角色但體驗差一截。建議兩手把。","本地合作","完整破關時數未確認；單次約數分鐘（itch 頁面標示）"),
+("itch","Joggernauts","Space Mace / Graffiti Games","動作","https://img.itch.zone/aW1nLzE2OTIxNzIucG5n/original/7Z%2BYoD.png","自動跑步的外星運動員連成一排，1～4 人互相換位跳色塊過關。","itch 4.5★・30 人評分","US$14.99","繁中未確認（頁面標示多語，無繁中）","https://spacemace.itch.io/joggernauts","只要兩個按鈕；強調真正需要配合的合作。也有 Switch 版。","本地合作","單次約數小時（itch 頁面標示）"),
+("itch","Ruins Of Mitriom","pixel-boy","冒險","https://img.itch.zone/aW1nLzc1OTQ4OTUucG5n/original/OgQCV%2F.png","1～4 人開著商隊找水晶：邊探索邊把能量點分配給角色與砲台。","itch 4.6★・72 人評分","免費","繁中未確認（頁面標示英／法）","https://pixel-boy.itch.io/ruins-of-mitriom","有網頁版；Steam 版可用遠端同樂。資源分配是核心，別讓商隊脫隊。","本地合作","約半小時（itch 頁面標示）"),
+]
+
+
 def thumb(u):
   r=urllib.request.urlopen(urllib.request.Request(u,headers={"User-Agent":"Mozilla/5.0"}),timeout=30).read()
   im=Image.open(io.BytesIO(r)).convert("RGB");im.thumbnail((480,480));b=io.BytesIO();im.save(b,"JPEG",quality=80)
   return "data:image/jpeg;base64,"+base64.b64encode(b.getvalue()).decode()
 e=html.escape;cards=""
 MP={"A Short Hike":"未確認","Celeste Classic":"未確認","We Become What We Behold":"未確認"}
-items=[(i+len(G)+len(G2)+len(G3)+len(G4)+len(G5),g[:11],g[11],g[12],"2026-11-06") for i,g in enumerate(G6,1)]+[(i+len(G)+len(G2)+len(G3)+len(G4),g[:11],g[11],g[12],"2026-11-05") for i,g in enumerate(G5,1)]+[(i+len(G)+len(G2)+len(G3),g[:11],g[11],g[12],"2026-11-03") for i,g in enumerate(G4,1)]+[(i+len(G)+len(G2),g[:11],g[11],g[12],"2026-11-01") for i,g in enumerate(G3,1)]+[(i+len(G),g[:11],g[11],g[12],"2026-10-31") for i,g in enumerate(G2,1)]+[(i,g,MP.get(g[1],"僅單人"),"未確認","2026-10-28") for i,g in enumerate(G,1)]
+items=[(i+len(G)+len(G2)+len(G3)+len(G4)+len(G5)+len(G6),g[:11],g[11],g[12],"2026-11-07") for i,g in enumerate(G7,1)]+[(i+len(G)+len(G2)+len(G3)+len(G4)+len(G5),g[:11],g[11],g[12],"2026-11-06") for i,g in enumerate(G6,1)]+[(i+len(G)+len(G2)+len(G3)+len(G4),g[:11],g[11],g[12],"2026-11-05") for i,g in enumerate(G5,1)]+[(i+len(G)+len(G2)+len(G3),g[:11],g[11],g[12],"2026-11-03") for i,g in enumerate(G4,1)]+[(i+len(G)+len(G2),g[:11],g[11],g[12],"2026-11-01") for i,g in enumerate(G3,1)]+[(i+len(G),g[:11],g[11],g[12],"2026-10-31") for i,g in enumerate(G2,1)]+[(i,g,MP.get(g[1],"僅單人"),"未確認","2026-10-28") for i,g in enumerate(G,1)]
 for i,g,mp,hr,dt in items:
   p,n,d,t,img,s,rv,pr,zh,l,tip=g
   cards+=f'''<div class="c" data-tags="#{p} #{t} #mp-{mp} #{dt}" data-id="{i}"><a href="{l}" target="_blank" rel="noopener"><img src="{thumb(img)}" alt="{e(n)}"></a><div class="b"><span class="dt">{dt} 推薦</span><h3>{i}. <a href="{l}" target="_blank" rel="noopener">{e(n)}</a></h3><div class="m">{"Steam" if p=="steam" else "itch.io"}・{t}・{e(d)}</div><p>{e(s)}</p><div class="m">{e(rv)}｜{e(pr)}｜{zh}</div><div class="m">👥 多人：{mp}</div><div class="m">⏱ {e(hr)}</div><p class="tip">💡 {e(tip)}</p><label><input type="checkbox" class="ni"> 不感興趣</label></div></div>'''
@@ -91,7 +105,7 @@ open("index.html","w").write(f'''<!doctype html><html lang="zh-Hant-TW"><head><m
 body{{background:#14161a;color:#e6e6e6;font-family:system-ui,"Noto Sans TC",sans-serif;margin:0;padding:20px}}h1{{margin:0}}.sub{{color:#9aa}}input[type=search]{{padding:8px;width:260px;background:#22252b;color:#eee;border:1px solid #444;border-radius:6px}}
 .row{{margin:8px 0}}button{{background:#22252b;color:#ccc;border:1px solid #444;border-radius:16px;padding:5px 12px;margin:2px;cursor:pointer}}button.on{{background:#3d6fd8;color:#fff}}
 .g{{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px;margin-top:12px}}.c{{background:#1e2127;border-radius:10px;overflow:hidden}}.c.x{{opacity:.4}}.c img{{width:100%;aspect-ratio:460/215;object-fit:cover;display:block}}.b{{padding:10px 12px}}h3{{margin:0 0 4px;font-size:1.05em}}h3 a{{color:#fff;text-decoration:none}}.m{{color:#9ab;font-size:.85em}}p{{margin:6px 0;font-size:.92em}}.dt{{float:right;font-size:.75em;background:#3d6fd8;color:#fff;border-radius:8px;padding:1px 6px}}.tip{{color:#cba}}#none{{display:none;color:#999;margin:20px}}#out{{width:100%;max-width:500px;background:#22252b;color:#eee}}</style></head><body>
-<h1>冷門好遊戲雷達</h1><div class="sub">共 {len(G)+len(G2)+len(G3)+len(G4)+len(G5)+len(G6)} 款・更新 2026-11-06・Steam 好評率/評論數取自商店頁（可能僅英文評論），itch 為頁面星等；多人資訊 Steam 取自商店分類、itch 頁面未標示者為未確認；遊玩時數來自 HowLongToBeat（部分經第三方轉載），查不到標未確認</div>
+<h1>冷門好遊戲雷達</h1><div class="sub">共 {len(G)+len(G2)+len(G3)+len(G4)+len(G5)+len(G6)+len(G7)} 款・更新 2026-11-07・Steam 好評率/評論數取自商店頁（可能僅英文評論），itch 為頁面星等；多人資訊 Steam 取自商店分類、itch 頁面未標示者為未確認；遊玩時數來自 HowLongToBeat（部分經第三方轉載），查不到標未確認</div>
 <div class="row"><input type="search" id="q" placeholder="搜尋名稱、類型、開發商…"> <button id="clr">清除</button> <span id="cnt"></span></div>
 <div class="row" id="r1">{r1}</div><div class="row" id="r2">{r2}</div><div class="row" id="r3">{r3}</div>
 <div class="row"><button id="exp">匯出「不感興趣」編號</button> <textarea id="out" rows="2" readonly></textarea></div>
